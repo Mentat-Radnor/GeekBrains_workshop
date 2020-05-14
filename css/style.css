@@ -103,6 +103,10 @@ body {
   text-transform: capitalize;
 }
 
+.header .header_content .left-content .search .dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
 .header .header_content .left-content .search input {
   padding: 0.93rem 1rem;
   border-style: none;
