@@ -643,6 +643,8 @@ section {
   width: 30px;
   height: 30px;
   background: #fff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .footer .social_icon .block img {
@@ -651,9 +653,17 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .footer .social_icon .block:hover {
   background: #f16d7f;
+}
+
+.footer .social_icon .block:hover img {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
 }
 /*# sourceMappingURL=style.css.map */
