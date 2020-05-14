@@ -1,0 +1,409 @@
+$Pinkcolor: #f16d7f;
+.color 
+    color: $Pinkcolor
+*,*:after,*:before
+    margin: 0 
+    padding: 0
+    box-sizing: border-box
+h1,h2,h3,h4,h5,h6
+    margin: 0 
+    padding: 0
+    font-family: 'Lato', sans-serif
+
+ul
+    list-style: none
+a 
+    text-decoration: none
+    color: inherit    
+body
+    font-family: 'Lato', sans-serif
+    margin: 0 auto
+    font-size: 15px
+
+.header
+    display: flex
+    flex-flow: row wrap
+
+    margin: 0 auto
+    padding: 0 calc( 50% - 570px )
+
+    .header_content
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between
+        align-items: center
+
+        height: 126px
+
+        border-bottom: 1px solid #e6e6e6
+        .left-content
+            display: flex
+            align-items: center
+            .logo   
+                display: flex
+                align-items: center
+                margin-right: 2.4rem
+                .logo_title
+                    font-size: 1.8rem
+                    text-transform: uppercase
+                    font-weight: 300
+                    margin-left: 0.86rem
+                    span
+                        color: $Pinkcolor
+                        font-weight: 700                        
+            .search
+                display: flex
+                border-collapse: collapse
+                border: 1px solid #e6e6e6
+                .dropdown                    
+                    padding: 0.93em 1em
+                    background: #f8f8f8 
+                    text-transform: capitalize                  
+                input
+                    padding: 0.93rem 1rem
+                    border-style: none
+                    border-left: 1px solid #e6e6e6
+                    border-right: 1px solid #e6e6e6
+                .btn_search
+                    width: 40px
+                    height: 40px
+                    align-self: center
+                    position: relative
+                    img 
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+        .shopping_cart
+            display: flex
+            align-items: center
+            img 
+                margin-right: 1.7em
+            .btn
+                background: $Pinkcolor
+                padding: 0.93em 1.26em
+
+                color: #ffffff
+    nav
+        flex-basis: 100%
+        height: 50px
+        .menu
+            display: flex
+            height: 100%
+            align-items: center
+            justify-content: center
+
+            text-transform: uppercase;
+            font-weight: 700
+            .nav_link
+                padding: 1rem 1rem
+section 
+    margin: 0 auto
+    padding: 0 calc( 50% - 570px )
+.main
+    margin: 0 auto  
+
+    .intro
+        height: 40em
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        background: #e7e7e7 url(/GeekBrains_workshop/img/intro/man.png) no-repeat center
+        background-size: cover
+        h1
+            text-transform: uppercase
+            font-weight: 900
+            font-size: 4rem
+            width: 450px
+            line-height: 4rem
+            padding-left: 1rem
+            border-left: 0.8rem solid $Pinkcolor
+            span 
+                font-weight: 700
+                font-size: 2.66rem
+
+// HOT_DEAL
+.hot_deal
+    margin: 5rem 0
+    display: flex
+    justify-content: space-between
+    .offer_content           
+        .offer_img
+            position: relative
+            margin-bottom: 1rem
+            cursor: pointer
+            .offer_title
+                position: absolute
+                top: 5%
+                left: 0
+                background: #ffffff
+
+                text-transform: uppercase                
+                
+                padding: 0.5rem 1rem
+                transition: 1s
+                h2,h3 
+                    font-weight: 900
+                h3 
+                    font-size: 1.2rem
+                h2 
+                    line-height: 2rem
+                    font-size: 2rem
+            &:hover .offer_title
+                padding-left: 3rem
+
+// PRODUCTS ===============
+.products
+    display: flex
+    flex-flow: row wrap 
+    margin: 5rem 0   
+    .product_title
+        flex-basis: 100%
+        text-align: center
+        h2 
+            font-size: 2rem
+            text-transform: capitalize
+            margin-bottom: 0.2em
+        p
+            color: #9f9f9f
+
+    .item_choice
+        flex-basis: 100%
+        display: flex
+        justify-content: space-between
+        .item_content
+            margin-top: 4rem
+
+            cursor: pointer    
+            transition: 0.2s  
+
+            .card
+                position: relative
+                .card_background
+                    opacity: 0
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: rgba(58, 56, 56, 0.83)
+                    color: #ffffff
+                    transition: 0.2s
+                
+                    .card_content
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        border: 1px solid #fff
+                        padding: 0.5rem 1rem
+                    
+                        .card_title
+                            font-size: 0.8rem
+                            font-weight: 700
+                            margin-left: 0.5
+            .item_text 
+                text-transform: uppercase
+                font-size: 0.86rem
+                margin: 1.1rem 1rem
+            .item_price
+                margin: 0 1rem
+                font-weight: 700
+        .item_content:hover .card_background
+            opacity: 1
+        .item_content:hover 
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+    .center_wraper
+        flex-basis: 100%
+        text-align: center
+        margin-top: 5rem
+    .btn       
+        padding: 1rem 1.5rem
+
+        text-transform: capitalize
+        font-weight: 700
+        color: #ffffff
+        background: $Pinkcolor
+        cursor: pointer
+        transition: .2s
+        &:hover
+            background: #eb354e
+
+// PROMO =======
+
+.promo
+    display: flex
+    flex-flow: row wrap
+    overflow: hidden
+    max-height: 481px
+    margin: 5rem 0
+    .promo_photo
+        flex-basis: 65% 
+        position: relative       
+        img 
+            width: 100%
+            height: auto
+        .promo_title
+            position: absolute
+            top: 30%
+            left: 5%
+
+            color: #ffffff
+            text-transform: uppercase
+            h2                
+                font-size: 3.5rem
+            h3
+                font-size: 2rem
+                font-weight: 400
+    .promo_content  
+        height: 100%
+        flex-basis: 35%
+        background: #222224
+        color: #ffffff        
+        
+        .promo_info
+            display: flex
+            margin: 2.66rem 2rem
+            .promo_icon
+                margin-right: 2rem
+            .promo_text
+                h2
+                    font-size: 1.33rem
+                    margin-bottom: 0.6em
+                p
+                    line-height: 1.5em
+                    opacity: 0.6
+
+// Reviews==========
+.reviews
+    display: flex
+    flex-flow: row wrap
+    background: url(../GeekBrains_workshop/img/reviews/bg.jpg) no-repeat, linear-gradient(60deg, #fac19a, #73a6da)
+    background-position: 100% 100%     
+    background-size: cover
+    background-blend-mode: overlay    
+    justify-content: space-around
+    align-items: center
+    margin: 5rem 0
+    .reviews_left        
+        flex-basis: 50%
+        padding-top: 7em
+        padding-bottom: 13em
+        display: flex 
+        border-right: 2px solid #e6e6e6       
+        .reviews_photo  
+            margin-right: 1rem         
+            img
+                border-radius: 50%
+                width: 100px
+                height: 100px
+        .reviews_text
+            padding-right: 2rem
+            p 
+                font-size: 1.06rem
+                line-height: 1.8rem
+                margin-bottom: 0.8rem
+                font-style: italic
+    .subscribe_right
+        flex-basis: 50%
+        text-align: center
+        .subscribe_title
+            text-transform: uppercase
+            font-size: 1.6rem
+            margin-bottom: 0.5em
+        .subscribe_sup
+            text-transform: uppercase
+            font-size: 0.9em
+            margin-bottom: 3em
+        input   
+            background: #dbdada
+            font-size: 0.9rem
+            padding: 0.5rem 1rem
+            border: none
+            border-top-left-radius: 25px
+            border-bottom-left-radius: 25px
+            outline: none
+        .btn
+            text-transform: capitalize
+            font-size: 0.9rem
+            color: #ffffff
+            padding: 0.5rem 1rem
+            background: $Pinkcolor
+            border-top-right-radius: 25px
+            border-bottom-right-radius: 25px
+                
+// Information
+.information
+    display: flex
+    flex-flow: row wrap
+    margin: 5rem 0
+    .info_brand
+        flex-basis: 40%
+        .logo   
+            display: flex
+            align-items: center            
+            margin-bottom: 2rem
+            .logo_title
+                font-size: 1.8rem
+                text-transform: uppercase
+                font-weight: 300
+                margin-left: 0.86rem
+                span
+                    color: $Pinkcolor
+                    font-weight: 700
+        .brand_text
+            font-size: 0.9rem
+            line-height: 1.7em 
+            color: #898989           
+    .info_column
+        flex-basis: 20%
+        .info_title
+            text-transform: uppercase
+            font-size: 1.2rem
+            margin-top: 1rem;
+            margin-bottom: 2rem
+        .info_link
+            display: block
+            color: #898989
+            font-size: 1.06rem
+            text-transform: capitalize
+
+            padding: 0.8em 0
+            &:hover
+                color: #000000
+
+// ========== FOOTER =============
+
+.footer 
+    height: 5.3rem   
+    margin: 0 auto
+    padding: 0 calc( 50% - 570px )
+
+    background: #e6e6e6
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .copyright
+        color: #7a7a7a
+    .social_icon
+        display: flex        
+        .block
+            margin: 0 0.5rem
+            position: relative
+            width: 30px
+            height: 30px
+            background: #fff
+            img                
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+            &:hover
+                background: $Pinkcolor
+                
+
+
