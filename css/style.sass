@@ -19,6 +19,16 @@ body
     font-family: 'Lato', sans-serif
     margin: 0 auto
     font-size: 15px
+    
+// press footer
+.page
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+.content
+    flex-grow: 1
+    
+
 
 .header
     display: flex
@@ -274,6 +284,31 @@ section
                 margin: 0 1rem
                 font-weight: 700
                 margin-bottom: 1rem
+            .rating-area 
+                position: absolute
+                overflow: hidden                
+                bottom: 5%
+                right: 0
+                &:not(:checked) > input 
+                    display: none
+                &:not(:checked) > label 
+                    float: right
+                    width: 15px
+                    padding: 0
+                    cursor: pointer
+                    font-size: 15px
+                    line-height: 20px
+                    color: lightgrey
+                    text-shadow: 1px 1px #bbb
+                &:not(:checked) > label:before 
+                    content: '★'
+                & > input:checked ~ label
+                    color: gold;
+                    text-shadow: 1px 1px #c60
+                &:not(:checked) > label:hover,&:not(:checked) > label:hover ~ label
+                    color: gold
+            
+
         .item_content:hover .card_background
             opacity: 1
         .item_content:hover 
@@ -455,8 +490,7 @@ section
 // ========== FOOTER =============
 
 .footer 
-    height: 5.3rem   
-    margin: 0 auto
+    height: 5.3rem     
     padding: 0 calc( 50% - 570px )    
     background: #e6e6e6
     display: flex
@@ -490,5 +524,93 @@ section
                 background: $Pinkcolor
                 
                     
+// ====== NEW PAGE PRODUCT =====
+.arrivals
+    background: #f8f3f4
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 calc( 50% - 570px )
+    .new_title
+        text-transform: uppercase
+        font-size: 1.6rem
+        padding: 2.7em 0
+    .crumb
+        display: flex
+        li 
+            position: relative
+            text-transform: uppercase
+            font-size: 0.9rem
+            padding: 0 0.4em  
+            opacity: 0.7 
+            transition: 0.2s     
+            &::after
+                position: absolute
+                top: 50%
+                right: -2%
+                content: ""
+                height: 70%
+                width: 2px
+                background: #727070
+                transform: translate(0,-45%) rotate(25deg)
+            &:last-child
+                color: $Pinkcolor
+            &:hover
+                opacity: 1
 
+//===== LIST_ORDER =====
+
+.list_order
+    margin: 5rem 0
+    display: flex
+    flex-flow: row wrap
+    .select 
+        flex-basis: 24%
+        details                     
+            summary
+                position: relative
+                padding: 0.85em 0
+                padding-left: 0.5em
+                outline: none                                 
+            
+                font-size: 0.93rem
+                text-transform: uppercase
+                font-weight: 700
+                border-left: 5px solid $Pinkcolor
+                margin-bottom: 1rem
+                border-bottom: 1px solid #ccc
+                &::-webkit-details-marker
+                    display: none
+                &::after
+                    display: inline-block
+                    content: ""
+                    background: url(../img/Product/up.svg) no-repeat center
+                    height: 20px
+                    width: 1.4em
+
+                    position: absolute
+                    top: 50%
+                    left: 90%
+                    transform: translateY(-50%)
+            summary:hover
+                color: $Pinkcolor
+            summary:active, summary:focus
+                color: $Pinkcolor
+        details[open] > summary::after 
+            background: url(../img/Product/down.svg) no-repeat center
+            
+            color: $Pinkcolor
+        ul
+            margin-bottom: 2rem       
+            li 
+                text-transform: capitalize
+                font-size: 0.93rem
+                font-weight: 400
+                    
+                padding: 0.7em 1em
+        
+
+            
+            
+            
 
