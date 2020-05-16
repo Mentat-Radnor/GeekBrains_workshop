@@ -237,82 +237,83 @@ section
         p
             color: #9f9f9f
 
-    .item_choice
-        flex-basis: 100%
-        display: flex
-        justify-content: space-between
-        .item_content
-            position: relative 
-            margin-top: 4rem
-            flex-basis: 23.5%
+.item_choice
+    flex-basis: 100%
+    flex-flow: row wrap
+    display: flex
+    justify-content: space-between
+    .item_content
+        position: relative
+        margin-top: 4rem
+        flex-basis: 23.5%
 
-            cursor: pointer   
-            .card
-                transition: 0.5s
-                width: 100%
+        cursor: pointer
+        .card
+            transition: 0.5s
+            width: 100%
             
-            .card_content
-                position: absolute
-                top: 40%
-                left: 50%
-                transform: translate(-50%,-40%)
+        .card_content
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translate(-50%,-40%)
 
-                display: none
-                justify-content: center
-                align-items: center
-                color: #fff
-                border: 1px solid #fff
-                padding: 0.5rem 1rem
-                transition: 0.5s
+            display: none
+            justify-content: center
+            align-items: center
+            color: #fff
+            border: 1px solid #fff
+            padding: 0.5rem 1rem
+            transition: 0.5s
                     
-                .card_title
-                    font-size: 0.8rem
-                    font-weight: 700
-                    margin-left: 0.5em
-                &:hover 
-                    box-shadow: 0 0 5px #fff,
-                    0 0 25px #fff
-            &:hover .card
-                filter: brightness(40%)
-            &:hover .card_content
-                display: flex
-            .item_text 
-                text-transform: uppercase
-                font-size: 0.86rem
-                margin: 1.1rem 1rem
-            .item_price
-                margin: 0 1rem
+            .card_title
+                font-size: 0.8rem
                 font-weight: 700
-                margin-bottom: 1rem
-            .rating-area 
-                position: absolute
-                overflow: hidden                
-                bottom: 5%
-                right: 0
-                &:not(:checked) > input 
-                    display: none
-                &:not(:checked) > label 
-                    float: right
-                    width: 15px
-                    padding: 0
-                    cursor: pointer
-                    font-size: 15px
-                    line-height: 20px
-                    color: lightgrey
-                    text-shadow: 1px 1px #bbb
-                &:not(:checked) > label:before 
-                    content: '★'
-                & > input:checked ~ label
-                    color: gold;
-                    text-shadow: 1px 1px #c60
-                &:not(:checked) > label:hover,&:not(:checked) > label:hover ~ label
-                    color: gold
+                margin-left: 0.5em
+            &:hover 
+                box-shadow: 0 0 5px #fff,
+                0 0 25px #fff
+        &:hover .card
+            filter: brightness(40%)
+        &:hover .card_content
+            display: flex
+        .item_text 
+            text-transform: uppercase
+            font-size: 0.86rem
+            margin: 1.1rem 1rem
+        .item_price
+            margin: 0 1rem
+            font-weight: 700
+            margin-bottom: 1rem
+        .rating-area 
+            position: absolute
+            overflow: hidden
+            bottom: 5%
+            right: 0
+            &:not(:checked) > input 
+                display: none
+            &:not(:checked) > label 
+                float: right
+                width: 15px
+                padding: 0
+                cursor: pointer
+                font-size: 15px
+                line-height: 20px
+                color: lightgrey
+                text-shadow: 1px 1px #bbb
+            &:not(:checked) > label:before 
+                content: '★'
+            & > input:checked ~ label
+                color: gold;
+                text-shadow: 1px 1px #c60
+            &:not(:checked) > label:hover,&:not(:checked) > label:hover ~ label
+                color: gold
             
 
-        .item_content:hover .card_background
-            opacity: 1
-        .item_content:hover 
-            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+    .item_content:hover .card_background
+        opacity: 1
+    .item_content:hover 
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
     .center_wraper
         flex-basis: 100%
         text-align: center
@@ -564,9 +565,11 @@ section
     margin: 5rem 0
     display: flex
     flex-flow: row wrap
+    justify-content: space-between
     .select 
         flex-basis: 24%
-        details                     
+        details    
+            cursor: pointer                 
             summary
                 position: relative
                 padding: 0.85em 0
@@ -603,14 +606,239 @@ section
         ul
             margin-bottom: 2rem       
             li 
-                text-transform: capitalize
-                font-size: 0.93rem
-                font-weight: 400
+                position: relative
+                a
+                    text-transform: capitalize
+                    font-size: 0.93rem
+                    font-weight: 400
+                    display: block
                     
-                padding: 0.7em 1em
-        
+                    padding: 0.7em 1em
+                &::after
+                    opacity: 0
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    height: 1px
+                    background: #ccc
+                    transition: 0.3s
+                &:hover::after
+                    opacity: 1
+    .content_select
+        flex-basis: 74%
+        .filter
+            display: flex
+            flex-flow: row wrap
+            justify-content: space-between
+            .filter_column
+                flex-basis: 32%
+                .filter_title
+                    text-transform: uppercase
+                    font-size: 0.93rem
+                    margin-bottom: 1.7em
+                .filter_content                    
+                    display: flex
+                    flex-flow: row wrap
+                    margin-bottom: 0.5em
+                    .content_item
+                        display: block
+                        font-size: 0.93rem
+                        padding: 0 0.6em
+                        border-right: 1px solid #e8e8e8
+                        &:first-child
+                            padding-left: 0
+                        &:last-child
+                            border-right: none
+                    .custom_box
+                        position: absolute
+                        opacity: 0
+                        z-index: -1
+                        & + label
+                            flex-basis: 25%
+                            display: block  
+                            margin-bottom: 0.5em                          
+                            text-transform: uppercase
+                            position: relative
+                            cursor: pointer
+                            padding-left: 1.5em                                                  
+                        &+label::before
+                            content: ''
+                            position: absolute
+                            bottom: 5%
+                            left: 0
+                            display: inline-block
+                            width: 1em
+                            height: 1em                            
+                            border: 1px solid #ebebeb                 
+                        &:checked+label::before                                                       
+                            border-color: #ebebeb 
+                            background-color: #ebebeb
+                        &:checked+label::after
+                            position: absolute
+                            width: 0.6em
+                            height: 1em
+                            bottom: -36%
+                            transform: translateY(-54%)
+                            left: 5%
+                            content: url(../img/product/exit.svg) 
+                    .range
+                        -webkit-appearance: none                                                
+                        width: 100%
+                        height: 7px
+                        border-radius: 5px
+                        background: #f0f0f0
+                        outline: none                        
+                        -webkit-transition: .2s
+                        transition: opacity .2s
+                    .range::-webkit-slider-thumb
+                        -webkit-appearance: none
+                        appearance: none  
+                        width: 1.2rem
+                        height: 1.2rem
+                        border-radius: 50%
+                        background: $Pinkcolor
+                        cursor: pointer
+                        &:focus
+                            outline: none
+                        &::ms-track
+                            width: 100%
+                            cursor: pointer
+                            background: transparent 
+                            border-color: transparent 
+                            color: transparent
+            .max-width
+                flex-basis: 100%
+                background: #f3f3f3
+                margin-top: 2rem
+                .sort
+                    display: inline-flex                 
+                    margin: 1rem 0.5rem
+                    background: #fff
+                    .sort_class
+                        text-transform: capitalize
+                        padding: 0.25em 1.3em
+                        border-right: 1px solid #ccc
+                    .sort_title
+                        text-transform: capitalize
+                        padding: 0.25em 1.3em
+                        padding-right: 2em
+                        summary
+                            position: relative                            
+                            outline: none               
+                            &::-webkit-details-marker
+                                display: none
+                            &::after
+                                display: inline-block
+                                content: ""
+                                background: url(../img/Product/down.svg) no-repeat center
+                                height: 15px
+                                width: 1em
 
-            
-            
-            
+                                position: absolute
+                                top: 50%
+                                left: 110%
+                                transform: translateY(-50%)
+                    details[open] > summary::after 
+                        background: url(../img/Product/up.svg) no-repeat center
+
+        .product
+            justify-content: space-between
+            .item_content                
+                flex-basis: 31%                
+                margin-top: 3rem
+        .product_tools
+            margin-top: 4rem
+            display: flex
+            justify-content: space-between
+            .select_page
+                display: inline-flex
+                padding: 0 2em
+                border: 1px solid #ebebeb
+                border-radius: 5px
+                position: relative
+                .number
+                    display: inline-block
+                    font-size: 1.06rem
+                    padding: 0.7em 0.5em
+                    opacity: 0.5
+                    cursor: pointer
+                    &:hover
+                        opacity: 1
+                .prev
+                    position: absolute
+                    content: ""
+                    width: 10px
+                    height: 10px                    
+                    top: 54%
+                    left: 6%                  
+                    
+                    transform: translateY(-50%) rotate(45deg)
+                    cursor: pointer                
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+                    border-left: 2px solid rgba(0, 0, 0, 0.2)               
+                    &:hover
+                        border-left: 2px solid rgba(219, 101, 117, 1)
+                        border-bottom: 2px solid rgba(219, 101, 117, 1)
+                .next
+                    position: absolute
+                    content: ""
+                    width: 10px
+                    height: 10px                    
+                    top: 54%
+                    right: 6%                  
+                    
+                    transform: translateY(-50%) rotate(-45deg)
+                    cursor: pointer                
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+                    border-right: 2px solid rgba(0, 0, 0, 0.2)               
+                    &:hover
+                        border-right: 2px solid rgba(219, 101, 117, 1)
+                        border-bottom: 2px solid rgba(219, 101, 117, 1)
+            .btn_all
+                align-self: center
+
+                font-size: 1.06rem
+                text-transform: capitalize
+                
+                padding: 0.5em 1.5em
+                border: 1px solid $Pinkcolor
+                border-radius: 5px
+                transition: .2s
+                &:hover
+                    background: $Pinkcolor
+                    color: #ffffff
+
+// === PROMO PAGE PRODUCT ===
+
+.no-padding
+    padding: 0
+    margin-bottom: 0
+    .promo_content
+        display: flex
+        justify-content: space-between
+        flex-basis: 100%
+        padding: 0 calc( 50% - 570px )
+        .promo_info
+            flex-basis: 30%
+            margin: 5rem 0
+            align-items: center
+            flex-direction: column
+            .promo_icon
+                margin-right: 0
+                height: 40px
+                margin-bottom: 2rem
+                img 
+                    height: 100%
+            .promo_text
+                text-align: center
+                h2 
+                    text-transform: capitalize
+
+// Reviews no-margin
+
+.no-margin
+    margin-top: 0
+
 
