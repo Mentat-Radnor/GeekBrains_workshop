@@ -1348,4 +1348,32 @@ section {
 .no-margin {
   margin-top: 0;
 }
+
+.cart .cart_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.86rem;
+  padding: 1.5em 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cart .cart_head .head_item {
+  -ms-flex-preferred-size: 16%;
+      flex-basis: 16%;
+}
+
+.cart .cart_head .max {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: left;
+}
+
+.cart .cart_head .min {
+  -ms-flex-preferred-size: 11%;
+      flex-basis: 11%;
+}
 /*# sourceMappingURL=style.css.map */
