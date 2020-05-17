@@ -842,3 +842,159 @@ section
     margin-top: 0
 
 
+// ======== PAGE 3 CART =======
+
+.cart
+    .cart_head
+        display: flex 
+        text-align: center  
+
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 0.86rem 
+        padding: 1.5em 0
+
+        border-bottom: 1px solid #f0f0f0
+
+        .head_item
+            flex-basis: 14%
+        .max
+            flex-basis: 36%
+            text-align: left
+        .min 
+            flex-basis: 11%
+    .cart_assemble
+        display: flex
+        text-align: center
+        align-items: center
+        font-size: 0.86rem
+
+        padding: 1.5em 0
+        border-bottom: 1px solid #f0f0f0
+        .assemble_img
+            display: flex
+            flex-basis: 36%
+            text-align: left            
+            .details
+                margin-left: 1em
+                h4
+                    text-transform: uppercase
+                    padding: 0.5em 0
+                    margin-bottom: 2em
+                .text
+                    span 
+                        font-weight: 300
+                        margin-left: 0.6em
+
+        .details_price,.quanity,.shipping
+            flex-basis: 14%
+        .quanity
+            input
+                display: inline-block
+                text-align: center
+                width: 4em                
+                padding: 0.5em 0
+                border: 1px solid #f0f0f0
+        .shipping
+            text-transform: uppercase
+
+        .subtotal,.action
+            flex-basis: 11%
+        .action            
+            height: 1rem
+            filter: opacity(0.2)
+            cursor: pointer
+            img 
+                height: 1rem
+    .btn_container
+        margin-top: 3rem
+        margin-bottom: 4rem
+        display: flex
+        flex-flow: row wrap 
+        justify-content: space-between
+        
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 0.93rem
+        .btn_cart 
+            border: 1px solid #eaeaea
+            padding: 1em 2em
+            transition: 0.3s
+            &:hover
+                background: #eaeaea
+                color: $Pinkcolor
+    .order_regist
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        .order_column
+            flex-basis: 31.5%
+            display: flex
+            flex-flow: column nowrap 
+            h3 
+                text-transform: uppercase
+                font-size: 1.06rem
+                font-weight: 700
+            input 
+                display: block
+                outline: none
+                width: 100%                
+                margin: 1.5em 0
+                padding: 0.8em 1em                
+                border: 1px solid #eaeaea
+                font-size: 0.83rem                
+                &::placeholder
+                    color: #c7c6c6
+                    text-transform: capitalize
+            .get                
+                text-transform: uppercase
+                font-size: 0.73rem
+                font-weight: 700
+                padding: 0.7em 1.4em
+                background: #fff
+                cursor: pointer
+                border: 1px solid #eaeaea
+                transition: 0.3s
+                &:hover
+                    background: #eaeaea
+                    color: $Pinkcolor
+            .hint
+                font-size: 0.93rem
+                font-weight: 300
+                margin-top: 1em   
+    .checkout        
+        background: #f5f3f3
+        padding: 1rem 0 2.5rem 0
+        .price_box
+            text-align: right
+            padding: 1.33rem 0
+            margin: 0 2rem 1.33rem 2rem            
+            border-bottom: 1px solid #e2e2e2
+            .sub_price
+                font-size: 0.73rem
+                text-transform: uppercase                
+            .main_price
+                margin-top: 0.5em
+
+                text-transform: uppercase
+                font-size: 1.06rem
+                font-weight: 700
+        .btn_check
+            text-align: center
+            text-transform: uppercase
+            font-size: 1.06rem
+            font-weight: 700
+            color: #fff 
+            background: $Pinkcolor
+            padding: 0.8em 0
+            margin: 0 2rem
+            cursor: pointer
+            transition: 0.3s
+            &:hover
+                background: #d6465a
+
+
+
+
+
+
