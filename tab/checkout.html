@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <!--! FONT AWESOM -->
+    <script src="https://kit.fontawesome.com/5c438f19a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <header class="header">
+                <div class="header_content">
+                    <div class="left-content">
+                        <a href="#" class="logo">
+                            <img src="../img/header/logo.png" alt="Brand">
+                            <h2 class="logo_title">Bran<span>d</span>
+                            </h2>
+                        </a><!-- logo -->
+                        <div class="search">
+                            <details class="dropdown">
+                                <summary>Browse</summary>
+                            </details>
+                            <input type="text" placeholder="Search for Item...">
+                            <a href="#" class="btn_search">
+                                <img src="../img/header/search.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="shopping_cart">
+                        <a href="#">
+                            <img src="../img/header/cart.png" alt="" class="cart">
+                        </a>
+                        <a href="#" class="btn">
+                            <details class="dropdown">
+                                <summary>my account</summary>
+                            </details>
+                        </a>
+                    </div>
+                </div>
+                <!--! header-content -->
+                <nav>
+                    <ul class="menu">
+                        <li class="list_menu"><a href="../index.html" class="nav_link">home</a></li>
+                        <li class="list_menu"><a href="../tab/product.html" class="nav_link">man</a></li>
+                        <li class="list_menu"><a href="../tab/product.html" class="nav_link">women</a></li>
+                        <li class="list_menu"><a href="../tab/product.html" class="nav_link">kids</a></li>
+                        <li class="list_menu"><a href="#" class="nav_link">accoseriese</a></li>
+                        <li class="list_menu"><a href="#" class="nav_link">featured</a></li>
+                        <li class="list_menu"><a href="#" class="nav_link">hot deals</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <header class="arrivals">
+                    <h1 class="new_title color">
+                        new arrivals
+                    </h1>
+                    <nav class="breadcrumb">
+                        <ul class="crumb">
+                            <li><a href="#" class="bread_link">home</a></li>
+                            <li><a href="#" class="bread_link">men</a></li>
+                            <li><a href="#" class="bread_link">new arrivals</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+
+                <section class="accordion">
+                    <div class="accordion_item">
+                        <input type="checkbox" id="tab" name="tab-group" checked class="accordion_check">
+                        <label for="tab" class="tab_title">01. Shipping Adress</label>
+                        <div class="accordion_list">
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+
+                                    <label for="guest">
+                                        <input type="radio" id="guest" value="check" name="check">
+                                        <span class="checkmark"></span>
+                                        checkout as guest
+                                    </label>
+
+                                    <label for="registr">
+                                        <input type="radio" id="registr" value="regist" name="check">
+                                        <span class="checkmark"></span>
+                                        Register
+                                    </label>
+
+                                </div>
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+                                    <p class="check_text"> >> Fast and easy checkout</p>
+                                    <p class="check_text"> >> Easy access to your order history and status</p>
+                                </div>
+                                <button class="btn" type="submit">Continue</button>
+                            </div><!-- !Left content -->
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Already registed?</h3>
+                                    <h4 class="check_text">Please log in below</h4>
+                                </div>
+                                <div class="check_item form">
+
+                                    <label for="email" class="login">Email Address<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="email" required>
+
+                                    <label for="email" class="login">Password<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="pass">
+
+                                </div>
+                                <div class="check_item">
+                                    <h4 class="check_text red"><sup>*</sup>Please log in below</h4>
+                                </div>
+
+                                <button class="btn" type="submit">Log in</button>
+                                <a href="#" class="form_link">Forgot Password?</a>
+                            </div><!-- !Right content -->
+                        </div><!-- list -->
+                    </div> <!-- accordion_item -->
+
+                    <div class="accordion_item">
+                        <input type="checkbox" id="tab2" name="tab-group" class="accordion_check">
+                        <label for="tab2" class="tab_title">02. BILLING INFORMATION</label>
+                        <div class="accordion_list">
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+
+                                    <label for="guest">
+                                        <input type="radio" id="guest" value="check" name="check">
+                                        <span class="checkmark"></span>
+                                        checkout as guest
+                                    </label>
+
+                                    <label for="registr">
+                                        <input type="radio" id="registr" value="regist" name="check">
+                                        <span class="checkmark"></span>
+                                        Register
+                                    </label>
+
+                                </div>
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+                                    <p class="check_text"> >> Fast and easy checkout</p>
+                                    <p class="check_text"> >> Easy access to your order history and status</p>
+                                </div>
+                                <button class="btn" type="submit">Continue</button>
+                            </div><!-- !Left content -->
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Already registed?</h3>
+                                    <h4 class="check_text">Please log in below</h4>
+                                </div>
+                                <div class="check_item form">
+
+                                    <label for="email" class="login">Email Address<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="email" required>
+
+                                    <label for="email" class="login">Password<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="pass">
+
+                                </div>
+                                <div class="check_item">
+                                    <h4 class="check_text red"><sup>*</sup>Please log in below</h4>
+                                </div>
+
+                                <button class="btn" type="submit">Log in</button>
+                                <a href="#" class="form_link">Forgot Password?</a>
+                            </div><!-- !Right content -->
+                        </div><!-- list -->
+                    </div> <!-- accordion_item -->
+
+                    <div class="accordion_item">
+                        <input type="checkbox" id="tab3" name="tab-group" class="accordion_check">
+                        <label for="tab3" class="tab_title">03. SHIPPING INFORMATION</label>
+                        <div class="accordion_list">
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+
+                                    <label for="guest">
+                                        <input type="radio" id="guest" value="check" name="check">
+                                        <span class="checkmark"></span>
+                                        checkout as guest
+                                    </label>
+
+                                    <label for="registr">
+                                        <input type="radio" id="registr" value="regist" name="check">
+                                        <span class="checkmark"></span>
+                                        Register
+                                    </label>
+
+                                </div>
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+                                    <p class="check_text"> >> Fast and easy checkout</p>
+                                    <p class="check_text"> >> Easy access to your order history and status</p>
+                                </div>
+                                <button class="btn" type="submit">Continue</button>
+                            </div><!-- !Left content -->
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Already registed?</h3>
+                                    <h4 class="check_text">Please log in below</h4>
+                                </div>
+                                <div class="check_item form">
+
+                                    <label for="email" class="login">Email Address<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="email" required>
+
+                                    <label for="email" class="login">Password<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="pass">
+
+                                </div>
+                                <div class="check_item">
+                                    <h4 class="check_text red"><sup>*</sup>Please log in below</h4>
+                                </div>
+
+                                <button class="btn" type="submit">Log in</button>
+                                <a href="#" class="form_link">Forgot Password?</a>
+                            </div><!-- !Right content -->
+                        </div><!-- list -->
+                    </div> <!-- accordion_item -->
+
+                    <div class="accordion_item">
+                        <input type="checkbox" id="tab4" name="tab-group" class="accordion_check">
+                        <label for="tab4" class="tab_title">04. Shipping Method</label>
+                        <div class="accordion_list">
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+
+                                    <label for="guest">
+                                        <input type="radio" id="guest" value="check" name="check">
+                                        <span class="checkmark"></span>
+                                        checkout as guest
+                                    </label>
+
+                                    <label for="registr">
+                                        <input type="radio" id="registr" value="regist" name="check">
+                                        <span class="checkmark"></span>
+                                        Register
+                                    </label>
+
+                                </div>
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+                                    <p class="check_text"> >> Fast and easy checkout</p>
+                                    <p class="check_text"> >> Easy access to your order history and status</p>
+                                </div>
+                                <button class="btn" type="submit">Continue</button>
+                            </div><!-- !Left content -->
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Already registed?</h3>
+                                    <h4 class="check_text">Please log in below</h4>
+                                </div>
+                                <div class="check_item form">
+
+                                    <label for="email" class="login">Email Address<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="email" required>
+
+                                    <label for="email" class="login">Password<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="pass">
+
+                                </div>
+                                <div class="check_item">
+                                    <h4 class="check_text red"><sup>*</sup>Please log in below</h4>
+                                </div>
+
+                                <button class="btn" type="submit">Log in</button>
+                                <a href="#" class="form_link">Forgot Password?</a>
+                            </div><!-- !Right content -->
+                        </div><!-- list -->
+                    </div> <!-- accordion_item -->
+
+                    <div class="accordion_item">
+                        <input type="checkbox" id="tab5" name="tab-group" class="accordion_check">
+                        <label for="tab5" class="tab_title">05. Payment Method</label>
+                        <div class="accordion_list">
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+
+                                    <label for="guest">
+                                        <input type="radio" id="guest" value="check" name="check">
+                                        <span class="checkmark"></span>
+                                        checkout as guest
+                                    </label>
+
+                                    <label for="registr">
+                                        <input type="radio" id="registr" value="regist" name="check">
+                                        <span class="checkmark"></span>
+                                        Register
+                                    </label>
+
+                                </div>
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+                                    <p class="check_text"> >> Fast and easy checkout</p>
+                                    <p class="check_text"> >> Easy access to your order history and status</p>
+                                </div>
+                                <button class="btn" type="submit">Continue</button>
+                            </div><!-- !Left content -->
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Already registed?</h3>
+                                    <h4 class="check_text">Please log in below</h4>
+                                </div>
+                                <div class="check_item form">
+
+                                    <label for="email" class="login">Email Address<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="email" required>
+
+                                    <label for="email" class="login">Password<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="pass">
+
+                                </div>
+                                <div class="check_item">
+                                    <h4 class="check_text red"><sup>*</sup>Please log in below</h4>
+                                </div>
+
+                                <button class="btn" type="submit">Log in</button>
+                                <a href="#" class="form_link">Forgot Password?</a>
+                            </div><!-- !Right content -->
+                        </div><!-- list -->
+                    </div> <!-- accordion_item -->
+
+                    <div class="accordion_item">
+                        <input type="checkbox" id="tab6" name="tab-group" class="accordion_check">
+                        <label for="tab6" class="tab_title">06. Order Review</label>
+                        <div class="accordion_list">
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+
+                                    <label for="guest">
+                                        <input type="radio" id="guest" value="check" name="check">
+                                        <span class="checkmark"></span>
+                                        checkout as guest
+                                    </label>
+
+                                    <label for="registr">
+                                        <input type="radio" id="registr" value="regist" name="check">
+                                        <span class="checkmark"></span>
+                                        Register
+                                    </label>
+
+                                </div>
+                                <div class="check_item">
+                                    <h3 class="check_title">Check as a guest or register</h3>
+                                    <h4 class="check_text">Register with us for future convenience</h4>
+                                </div>
+                                <div class="check_item">
+                                    <p class="check_text"> >> Fast and easy checkout</p>
+                                    <p class="check_text"> >> Easy access to your order history and status</p>
+                                </div>
+                                <button class="btn" type="submit">Continue</button>
+                            </div><!-- !Left content -->
+
+                            <div class="content">
+                                <div class="check_item">
+                                    <h3 class="check_title">Already registed?</h3>
+                                    <h4 class="check_text">Please log in below</h4>
+                                </div>
+                                <div class="check_item form">
+
+                                    <label for="email" class="login">Email Address<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="email" required>
+
+                                    <label for="email" class="login">Password<sup>*</sup></label>
+                                    <input type="email" class="input_field" id="pass">
+
+                                </div>
+                                <div class="check_item">
+                                    <h4 class="check_text red"><sup>*</sup>Please log in below</h4>
+                                </div>
+
+                                <button class="btn" type="submit">Log in</button>
+                                <a href="#" class="form_link">Forgot Password?</a>
+                            </div><!-- !Right content -->
+                        </div><!-- list -->
+                    </div> <!-- accordion_item -->
+                </section><!-- accordion -->
+
+                <section class="reviews">
+                    <div class="reviews_left">
+                        <div class="reviews_photo">
+                            <img src="../img/Reviews/photo.jpg" alt="people">
+                        </div>
+                        <div class="reviews_text">
+                            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                            </p>
+                            <h4 class="reviews_author color">Bin Burhan</h4>
+                            <h5 class="company">Dhaka, Bd</h5>
+                        </div>
+                    </div>
+                    <div class="subscribe_right">
+                        <h3 class="subscribe_title">Subscribe</h3>
+                        <h4 class="subscribe_sup">FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <div class="unification_btn">
+                            <input type="email" placeholder="Enter your email">
+                            <a href="#" class="btn" type="submite">subscribe</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="information">
+                    <div class="info_brand">
+                        <a href="#" class="logo">
+                            <img src="../img/header/logo.png" alt="Brand">
+                            <h2 class="logo_title">Bran<span>d</span>
+                            </h2>
+                        </a><!-- logo -->
+                        <p class="brand_text">Objectively transition extensive data rather than cross functional
+                            solutions. Monotonectally
+                            syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                            syndicate an
+                            expanded array of processes and cross-unit partnerships.
+                            <br><br>
+                            Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically
+                            optimize.
+                        </p>
+                    </div><!-- info_brand -->
+                    <nav class="info_column">
+                        <div class="info_title color">Company</div>
+                        <a href="#" class="info_link">home</a>
+                        <a href="#" class="info_link">shop</a>
+                        <a href="#" class="info_link">about</a>
+                        <a href="#" class="info_link">how it works</a>
+                        <a href="#" class="info_link">contact</a>
+                    </nav><!-- info_column -->
+                    <nav class="info_column">
+                        <div class="info_title color">Information</div>
+                        <a href="#" class="info_link">tearms & condition</a>
+                        <a href="#" class="info_link">Privacy policy</a>
+                        <a href="#" class="info_link">How to Buy</a>
+                        <a href="#" class="info_link">How to Sell</a>
+                        <a href="#" class="info_link">Promotion</a>
+                    </nav>
+                    <nav class="info_column">
+                        <div class="info_title color">Shop category</div>
+                        <a href="#" class="info_link">Man</a>
+                        <a href="#" class="info_link">Women</a>
+                        <a href="#" class="info_link">Child</a>
+                        <a href="#" class="info_link">Apparel</a>
+                        <a href="#" class="info_link">Brows all</a>
+                    </nav>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="copyright">
+                &copy2020 Brand All Rights Reserved
+            </div>
+            <div class="social_icon">
+                <a href="#" class="social_link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social_link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="#" class="social_link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" class="social_link">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social_link">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
