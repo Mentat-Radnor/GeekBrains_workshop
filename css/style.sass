@@ -192,7 +192,8 @@ body
                             display: flex
                             flex-flow: column 
                             justify-content: space-around                           
-                            .content_h3         
+                            .content_h3     
+                                font-weight: 700    
                                 font-size: 0.8rem                       
                                 text-transform: uppercase
                             .box_star 
@@ -277,6 +278,7 @@ body
             .list_menu
                 position: relative
                 .drop
+                    z-index: 1000
                     display: none
                     background: #ffffff
                     border-radius: 5px
@@ -364,8 +366,9 @@ section
             padding-left: 1rem
             border-left: 0.8rem solid $Pinkcolor
             span 
-                font-weight: 700
+                font-weight: 900
                 font-size: 2.66rem
+                line-height: 0
 
 // HOT_DEAL
 .hot_deal
@@ -1059,7 +1062,9 @@ section
             text-align: left            
             .details
                 margin-left: 1em
-                h4
+                a
+                    display: block
+                    font-weight: 700
                     text-transform: uppercase
                     padding: 0.5em 0
                     margin-bottom: 2em
@@ -1086,8 +1091,12 @@ section
             height: 1rem
             filter: opacity(0.2)
             cursor: pointer
+            transition: 0.3s
+            &:hover 
+                filter: opacity(1)
             img 
                 height: 1rem
+            
     .btn_container
         margin-top: 3rem
         margin-bottom: 4rem

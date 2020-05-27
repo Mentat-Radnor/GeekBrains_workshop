@@ -322,6 +322,7 @@ body {
 }
 
 .header .header_content .shopping_cart .cart_drop_flex .cart_menu .menu_item .menu_content .content_h3 {
+  font-weight: 700;
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -450,6 +451,7 @@ body {
 }
 
 .header nav .menu .list_menu .drop {
+  z-index: 1000;
   display: none;
   background: #ffffff;
   border-radius: 5px;
@@ -582,8 +584,9 @@ section {
 }
 
 .main .intro h1 span {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 2.66rem;
+  line-height: 0;
 }
 
 .hot_deal {
@@ -1670,7 +1673,9 @@ section {
   margin-left: 1em;
 }
 
-.cart .cart_assemble .assemble_img .details h4 {
+.cart .cart_assemble .assemble_img .details a {
+  display: block;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 0.5em 0;
   margin-bottom: 2em;
@@ -1708,6 +1713,13 @@ section {
   -webkit-filter: opacity(0.2);
           filter: opacity(0.2);
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cart .cart_assemble .action:hover {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
 }
 
 .cart .cart_assemble .action img {
